@@ -1,0 +1,2 @@
+add_executable(example_usage example.cpp)
+target_link_libraries(example_usage mylib)
