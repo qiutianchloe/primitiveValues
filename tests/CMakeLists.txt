@@ -1,0 +1,3 @@
+add_executable(test_primitivevalue test_basic.cpp)
+target_link_libraries(test_primitivevalue primitivevalue)
+add_test(NAME BasicTest COMMAND test_primitivevalue)

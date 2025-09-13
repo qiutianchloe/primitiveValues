@@ -1,16 +1,16 @@
-#include "mylib/mylib.h"
+#include "primitivevalue/primitivevalue.h"
 #include <iostream>
 
 int main() {
-    mylib_init();
+    primitivevalue_init();
     
     char output[256];
-    int result = mylib_process("Hello, World!", output, sizeof(output));
+    int result = primitivevalue_process("Hello, PrimitiveValue!", output, sizeof(output));
     
     if (result == 0) {
         std::cout << "Processed: " << output << std::endl;
     }
     
-    mylib_cleanup();
+    primitivevalue_cleanup();
     return 0;
 }
